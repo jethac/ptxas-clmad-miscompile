@@ -1,0 +1,11 @@
+# nvdisasm V13.3.73 -c  (clmad_bug.cubin, sm_121a) — /*0060*/ decodes correctly:
+
+        /*0000*/                   LDC R1, c[0x0][0x37c] ;
+        /*0010*/                   LDC.64 R2, c[0x0][0x390] ;
+        /*0020*/                   LDCU.64 UR6, c[0x0][0x388] ;
+        /*0030*/                   LDC.64 R4, c[0x0][0x380] ;
+        /*0040*/                   LDCU.64 UR4, c[0x0][0x358] ;
+        /*0050*/                   LDC.64 R6, c[0x0][0x398] ;
+        /*0060*/                   CLMAD.LO R2, R2, UR6, R6 ;
+        /*0070*/                   STG.E.64 desc[UR4][R4.64], R2 ;
+        /*0080*/                   EXIT ;
